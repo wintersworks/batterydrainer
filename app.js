@@ -33,6 +33,7 @@ mongoose.connection.once('open', function() {
 		if (!greetings) {
 			greeting = new Greeting({sentence: standardGreeting});
 			greeting.save();
+			console.log(greeting);
 		}
 	});
 });
